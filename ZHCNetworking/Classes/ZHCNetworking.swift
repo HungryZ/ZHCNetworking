@@ -14,6 +14,11 @@ public struct ZHCResponse {
 
 open class ZHCNetworking {
     
+    public enum ZHCEncoderType {
+        case http
+        case json
+    }
+    
     open private(set) var baseUrl: String!
     
     open private(set) var path: String!
@@ -21,6 +26,8 @@ open class ZHCNetworking {
     open private(set) var method: HTTPMethod = .post
     
     var parameters: [String: Any]?
+    
+    open private(set) var encoderType: ZHCEncoderType = .json
     
     open private(set) var headers: HTTPHeaders?
     
@@ -52,24 +59,13 @@ public extension ZHCNetworking {
     
     func request(params: [String : Any]? = nil, succeed: @escaping (ZHCResponse) -> Void, fail: ((AFError) -> Void)? = nil) {
         let urlString = baseUrl + path
-        let reqParams = params != nil ? params : parameters
+        let reqParams = (params != nil ? params : parameters) as! [String : [[String : String]]]
+//        let reqParams = params != nil ? params : parameters
+        let encoder: ParameterEncoder = encoderType == .http ? URLEncodedFormParameterEncoder.default : JSONParameterEncoder.default
         
-        let dic: [String : Any] = [
-            "clickCount" : 0,
-            "communityUuid" : 1557133592437760,
-            "exposureCount" : 21,
-            "uploadTime" : "2021-04-13 17:43:37",
-            "userUuid" : 1575275730330624,
-            "uuid" : 132340357397902,
-        ]
-        let array = [dic]
-        let param = ["log" : array]
-        let jsonData = try! JSONSerialization.data(withJSONObject: param, options: .prettyPrinted)
-        
-        AF.request(urlString, method: method, parameters: jsonData, headers: headers, requestModifier: { (urlRequest) in
+        AF.request(urlString, method: method, parameters: reqParams, encoder: encoder, headers: headers, requestModifier: { (urlRequest) in
             urlRequest.timeoutInterval = self.timeoutInterval
-            urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            urlRequest.setValue("91c405ef-8e38-47ac-8c73-abecb0c363a6", forHTTPHeaderField: "token")
+
         }).responseJSON(completionHandler: { (response) in
             switch response.result {
             case .success(let result):

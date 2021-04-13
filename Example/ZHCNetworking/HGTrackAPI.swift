@@ -6,9 +6,15 @@
 //  Copyright © 2021 CocoaPods. All rights reserved.
 //
 
+import ZHCNetworking
+
 class HGTrackAPI: HGNetworking {
 
     override var path: String! {
         "/openAuth/adv/log/upload"
+    }
+    
+    override var encoderType: ZHCNetworking.ZHCEncoderType {
+        .json
     }
 }

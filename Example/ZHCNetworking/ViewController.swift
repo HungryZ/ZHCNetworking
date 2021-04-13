@@ -21,13 +21,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonClicked(_ sender: Any) {
-        let dic: [String : Any] = [
-            "clickCount" : 0,
-            "communityUuid" : 1557133592437760,
-            "exposureCount" : 21,
+        let dic: [String : String] = [
+            "clickCount" : "0",
+            "communityUuid" : "1557133592437760",
+            "exposureCount" : "21",
             "uploadTime" : "2021-04-13 17:43:37",
-            "userUuid" : 1575275730330624,
-            "uuid" : 132340357397902,
+            "userUuid" : "1575275730330624",
+            "uuid" : "132340357397902",
         ]
         let array = [dic]
         let param = ["log" : array]

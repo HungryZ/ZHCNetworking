@@ -14,8 +14,4 @@ class HGNetworking: ZHCNetworking {
     override var baseUrl: String! {
         "https://hxq.komect.com"
     }
-    
-//    override var headers: HTTPHeaders? {
-//        ["Content-Type" : "application/json"]
-//    }
 }
