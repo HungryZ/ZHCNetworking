@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ZHCNetworking_Example' do
+  pod 'ZHCNetworking', :path => '../'
+
+  target 'ZHCNetworking_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
