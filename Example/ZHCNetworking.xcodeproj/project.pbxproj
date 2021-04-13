@@ -15,6 +15,10 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		91AC12F3BEA39450C766DB28 /* Pods_ZHCNetworking_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6533C0275C65AE3580E784 /* Pods_ZHCNetworking_Tests.framework */; };
+		93CF7DE426258DEC009DDFE2 /* HGNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CF7DE326258DEC009DDFE2 /* HGNetworking.swift */; };
+		93CF7DE826258F62009DDFE2 /* HGVisitorLoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CF7DE726258F62009DDFE2 /* HGVisitorLoginAPI.swift */; };
+		93CF7DEE2625900E009DDFE2 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CF7DED2625900E009DDFE2 /* Header.swift */; };
+		93CF7DFA26259450009DDFE2 /* HGTrackAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CF7DF926259450009DDFE2 /* HGTrackAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		013813E7DD9BAD1AC39DDAA6 /* ZHCNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZHCNetworking.podspec; path = ../ZHCNetworking.podspec; sourceTree = "<group>"; };
+		013813E7DD9BAD1AC39DDAA6 /* ZHCNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZHCNetworking.podspec; path = ../ZHCNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2D6533C0275C65AE3580E784 /* Pods_ZHCNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZHCNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* ZHCNetworking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHCNetworking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,10 +46,14 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		82F9CF9617A036953864B241 /* Pods-ZHCNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHCNetworking_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZHCNetworking_Example/Pods-ZHCNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		86C0D47FD621491B98177339 /* Pods-ZHCNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHCNetworking_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZHCNetworking_Tests/Pods-ZHCNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		99E5CC631701B57CD43173E3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		93CF7DE326258DEC009DDFE2 /* HGNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGNetworking.swift; sourceTree = "<group>"; };
+		93CF7DE726258F62009DDFE2 /* HGVisitorLoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGVisitorLoginAPI.swift; sourceTree = "<group>"; };
+		93CF7DED2625900E009DDFE2 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		93CF7DF926259450009DDFE2 /* HGTrackAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGTrackAPI.swift; sourceTree = "<group>"; };
+		99E5CC631701B57CD43173E3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AA4D5897008A91720427BF33 /* Pods-ZHCNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHCNetworking_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZHCNetworking_Tests/Pods-ZHCNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE26974622E0D6D1D9C0399A /* Pods-ZHCNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHCNetworking_Example.release.xcconfig"; path = "Target Support Files/Pods-ZHCNetworking_Example/Pods-ZHCNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DD3A1B92FAE00193B5FE6420 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DD3A1B92FAE00193B5FE6420 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E464644804B880BEE2316B66 /* Pods_ZHCNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZHCNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,11 +110,15 @@
 		607FACD21AFB9204008FA782 /* Example for ZHCNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				93CF7DE326258DEC009DDFE2 /* HGNetworking.swift */,
+				93CF7DE726258F62009DDFE2 /* HGVisitorLoginAPI.swift */,
+				93CF7DF926259450009DDFE2 /* HGTrackAPI.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				93CF7DED2625900E009DDFE2 /* Header.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for ZHCNetworking";
@@ -156,7 +168,6 @@
 				AA4D5897008A91720427BF33 /* Pods-ZHCNetworking_Tests.debug.xcconfig */,
 				86C0D47FD621491B98177339 /* Pods-ZHCNetworking_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,7 +182,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				011F9E46FA395D7ED23F0BFB /* [CP] Embed Pods Frameworks */,
+				7890CEF4BF99D5F44582BD49 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +238,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,17 +274,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		011F9E46FA395D7ED23F0BFB /* [CP] Embed Pods Frameworks */ = {
+		7890CEF4BF99D5F44582BD49 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZHCNetworking_Example/Pods-ZHCNetworking_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ZHCNetworking/ZHCNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZHCNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,8 +345,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93CF7DEE2625900E009DDFE2 /* Header.swift in Sources */,
+				93CF7DE826258F62009DDFE2 /* HGVisitorLoginAPI.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				93CF7DFA26259450009DDFE2 /* HGTrackAPI.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				93CF7DE426258DEC009DDFE2 /* HGNetworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -479,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZHCNetworking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZHCNetworking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

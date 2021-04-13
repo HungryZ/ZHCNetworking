@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (5.4.1)
+  - ZHCNetworking (0.1.0):
+    - Alamofire (~> 5.4.1)
+
+DEPENDENCIES:
+  - ZHCNetworking (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  ZHCNetworking:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  ZHCNetworking: 3b51e55a65d5d5a99e573c66fd67f8440bee2ccc
+
+PODFILE CHECKSUM: b5478f0ab4c48d8caec92c11d81cf63457717675
+
+COCOAPODS: 1.10.1

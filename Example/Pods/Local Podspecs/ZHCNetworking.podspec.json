@@ -1,0 +1,27 @@
+{
+  "name": "ZHCNetworking",
+  "version": "0.1.0",
+  "summary": "A short description of ZHCNetworking.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhanghaichuan/ZHCNetworking",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhanghaichuan": "924320752@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zhanghaichuan/ZHCNetworking.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ZHCNetworking/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "~> 5.4.1"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module ZHCNetworking {
+  umbrella header "ZHCNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}
