@@ -9,9 +9,13 @@
 import ZHCNetworking
 
 class HGTrackAPI: HGNetworking {
+    
+    override var baseUrl: String! {
+        "https://httpbin.org/post"
+    }
 
     override var path: String! {
-        "/openAuth/adv/log/upload"
+        ""
     }
     
     override var encoderType: ZHCNetworking.ZHCEncoderType {
