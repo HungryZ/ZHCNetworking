@@ -1,12 +1,22 @@
 PODS:
   - Alamofire (5.4.1)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - SwiftyJSON (5.0.0)
   - ZHCNetworking (0.1.0):
     - Alamofire (~> 5.4.1)
 
 DEPENDENCIES:
+  - Moya
+  - SwiftyJSON
   - ZHCNetworking (from `../`)
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Moya
+    - SwiftyJSON
   trunk:
     - Alamofire
 
@@ -16,8 +26,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   ZHCNetworking: 3b51e55a65d5d5a99e573c66fd67f8440bee2ccc
 
-PODFILE CHECKSUM: b5478f0ab4c48d8caec92c11d81cf63457717675
+PODFILE CHECKSUM: 972bbb556f505a5b354eff4660524d407b5d512a
 
 COCOAPODS: 1.10.1

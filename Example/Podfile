@@ -5,6 +5,8 @@ platform :ios, '10.0'
 
 target 'ZHCNetworking_Example' do
   pod 'ZHCNetworking', :path => '../'
+  pod 'Moya'
+  pod 'SwiftyJSON'
 
   target 'ZHCNetworking_Tests' do
     inherit! :search_paths
